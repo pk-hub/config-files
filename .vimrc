@@ -39,10 +39,19 @@ augroup Shebang
   autocmd BufNewFile *.\(cc\|hh\) 0put =\"//\<nl>// \".expand(\"<afile>:t\").\" -- \<nl>//\<nl>\"|2|start!
 augroup END
 
-"" HIGHLIGHT 81th COLUMN
-set cc=81
+"" HIGHLIGHT 120th COLUMN
+set cc=120
 highlight ColorColumn ctermbg=DarkGreen ctermfg=black
 ""highlight ColorColumn ctermbg=yellow ctermfg=black
-""call matchadd('ColorColumn', '\%81v', 100)
+""call matchadd('ColorColumn', '\%120v', 100)
 
 command Todo noautocmd vimgrep /TODO\|FIXME/j ** | cw
+
+"" Autostart nerdtree
+""autocmd vimenter * NERDTree
+
+"" Must have plugins
+"" - nerdtree
+"" - airline
+"" - fugitive
+
