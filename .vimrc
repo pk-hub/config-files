@@ -48,12 +48,14 @@ command Todo noautocmd vimgrep /TODO\|FIXME/j ** | cw   " todo list generation
 
 "" MAPPINGS
 map <C-o> :NERDTreeToggle<CR>
+map <C-f> :FZF<CR>
 
 "" RUNTIME PATH CHANGES
 set rtp+=~/.fzf
 
-"" MUST HAVE PLUGINS
+"" MUST HAVE PLUGINS/TOOLS
 "" * nerdtree: https://github.com/scrooloose/nerdtree.git
 "" * vim-airline: https://github.com/vim-airline/vim-airline
 "" * fugitive: https://github.com/tpope/vim-fugitive
+"" * fzf: https://github.com/junegunn/fzf
 
