@@ -42,16 +42,12 @@ augroup END
 "" HIGHLIGHT 120th COLUMN
 set cc=120
 highlight ColorColumn ctermbg=DarkGreen ctermfg=black
-""highlight ColorColumn ctermbg=yellow ctermfg=black
-""call matchadd('ColorColumn', '\%120v', 100)
 
+"" MISC COMMANDS
 command Todo noautocmd vimgrep /TODO\|FIXME/j ** | cw
 
-"" Autostart nerdtree
-""autocmd vimenter * NERDTree
-
-"" Must have plugins
-"" - nerdtree
-"" - airline
-"" - fugitive
+"" MUST HAVE PLUGINS
+"" * nerdtree: https://github.com/scrooloose/nerdtree.git
+"" * vim-airline: https://github.com/vim-airline/vim-airline
+"" * fugitive: https://github.com/tpope/vim-fugitive
 
