@@ -44,7 +44,13 @@ set cc=120
 highlight ColorColumn ctermbg=DarkGreen ctermfg=black
 
 "" MISC COMMANDS
-command Todo noautocmd vimgrep /TODO\|FIXME/j ** | cw
+command Todo noautocmd vimgrep /TODO\|FIXME/j ** | cw   " todo list generation
+
+"" MAPPINGS
+map <C-o> :NERDTreeToggle<CR>
+
+"" RUNTIME PATH CHANGES
+set rtp+=~/.fzf
 
 "" MUST HAVE PLUGINS
 "" * nerdtree: https://github.com/scrooloose/nerdtree.git
