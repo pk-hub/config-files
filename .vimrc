@@ -1,6 +1,7 @@
 "" GENERAL
 set nocompatible                    " Use 'vim' settings rather than 'vi' ones
 "" INTERFACE
+colorscheme evening
 set number numberwidth=4            " Show line numbers
 highlight LineNr term=bold ctermfg=Black ctermbg=Gray
 set linebreak                       " Break lines at word (requires wrap lines)
@@ -48,7 +49,7 @@ command Todo noautocmd vimgrep /TODO\|FIXME/j ** | cw   " todo list generation
 
 "" MAPPINGS
 map <C-o> :NERDTreeToggle<CR>
-map <C-f> :FZF<CR>
+map <C-x> :FZF<CR>
 
 "" RUNTIME PATH CHANGES
 set rtp+=~/.fzf
