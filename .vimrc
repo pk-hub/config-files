@@ -1,7 +1,7 @@
 "" GENERAL
 set nocompatible                    " Use 'vim' settings rather than 'vi' ones
+
 "" INTERFACE
-colorscheme evening
 set number numberwidth=4            " Show line numbers
 highlight LineNr term=bold ctermfg=Black ctermbg=Gray
 set linebreak                       " Break lines at word (requires wrap lines)
