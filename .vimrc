@@ -1,5 +1,6 @@
 "" GENERAL
 set nocompatible                    " Use 'vim' settings rather than 'vi' ones
+set t_Co=256                        " Tell 'vim' to use 256 colors (usage over ssh)
 
 "" INTERFACE
 set number numberwidth=4            " Show line numbers
